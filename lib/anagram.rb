@@ -9,7 +9,9 @@ class Anagram
   end
 
   def match(phrase)
-    phrase.to_a.select {|w| w.split("").sort==self.word.split("").sort}
+    phrase.to_a.select
+    {|w|
+      w.split("").sort==self.word.split("").sort}
 # binding.pry
 end
 
